@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="./js/script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+
+    
+</head>
+<body>
+    
+    
+    <main class="decodificador">
+        <!-- img top -->
+        <img  id="imagem__cabecalho" src="./img/Frame.png" alt="a_de _alura">
+        <!-- texto de entrada e botoes -->
+        <section class="conteudo__principal">
+                <textarea id="textoarea1" name="textoentrada" class="texto__entrada" placeholder="Digite seu texto" tabindex="1"  autofocus></textarea>
+                
+                <p class="texto__aviso"><img src="./img/exclamation-solid.svg"> Apenas letras minúsculas e sem acento serão criptografadas.</p>
+                <!--botoes -->
+                <div class="botoes__area">
+                    <button  onclick="encripta()" class="botao__encripta" id="btn1">Criptografar</button>
+                    <button onclick="desencripta()" class="botao__encripta" id="btn2">Descriptografar</button>
+                </div>
+        </section> 
+        <!-- divs que alternam visbilidade conforme botao e clicado -->
+        <div id= "texto__saida__com__imagem"> 
+           
+            <h3 id="h3__caixa__do__texto__saida">Nenhuma mensagem encontrada</h3> 
+            <p id="texto__aviso__saida" class="texto__aviso">Digite na caixa  de texto ao lado o texto que você deseja criptografar ou descriptografar clicando no botao correspondente.</p>
+        </div>
+
+        <div id="area__botao__saida" >
+ <texta           rea id="texto__de__saida" name="textosaida" class="texto__saida" placeholder="Nenhuma mensagem encontrada"></textarea>
+    <img id="imagem__do__texto__saida" src="./img/High.svg " alt="imagem da div saida do decodificador">
+        </div> 
+
+    </main>
+    
+    
+    <!-- rodape -->
+    <footer>
+
+        Desenvolvido por <a href="https://github.com/Gmerick/Challenger" alt="Erick Gomes">Erick Gomes</a>
+    
+    </footer>
+     
+</body>
+</html>
